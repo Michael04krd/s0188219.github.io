@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="background-color: rgb(245, 245, 220)">
+    <h1 style="text-align: center;">
+        <i><u>Страница со всякими ссылками</u></i>
+    </h1>
+
+    <ul>
+      <li> <a href="http://kubsu.ru/">  Абсолютнaя гиперссылка на главную страницу сайта kubsu.ru </a> </li>
+      <li><a href="https://kubsu.ru/"> Абсолютная гиперссылка на главную сайта kubsu.ru в протоколе https</a></li>
+      <li><a href="http://kubsu.ru/">
+          <img id = "123" src="./Камышовый_кот.jpg" alt="Тут должен быть камышовый кот" style="width:500px"> 
+      </a></li>
+      <li><a href="./about/low.html"> Сокращенная ссылка на внутреннюю страницу </a></li>
+      <li><a href="/"> Сокращенная ссылка на главную страницу </a></li>
+      <li><a href="#form"> Ссылка на фрагмент текущей страницы </a></li>
+      <li><a href="https://example.com/asd=1&b=15&ghj=13"> Ссылку с тремя параметрами в URL</a></li>
+      <li><a href="#123"> Ссылка с параметром id в URL</a></li>
+      <li><a href="./"> Относительная ссылка на страницу в текущем каталоге</a></li>
+      <li><a href="./about/low.html"> Относительная ссылка на страницу в каталоге about </a></li>
+      <li><a href="../"> Относительную ссылка на страницу в каталоге уровнем выше текущего</a></li>
+      <li> <a href="../../"> Относительная ссылка на страницу в каталоге двумя уровнями выше</a></li>  
+      <li> Какой то текст и в нем<a href="https://cat-bounce.com/"> ссылка </a></li>
+      <li><a href="https://www.mvideo.ru/products/smartfon-apple-iphone-16-128gb-dual-sim-black-30074479"> Ссылка на фрагмент страницы стороннего сайта </a></li>
+      <li>
+        Ссылка из прямоугольных и круглых областей картинки <br> (картинка солнца ведет на эту же страницу, а море в low)
+        <br>
+        <map name="map">
+            <area shape="rect" coords="0,250,500,370" href="./about/low.html" alt="HTML">
+            <area shape="circle" coords="250,130,25" href="https://otvet.mail.ru/question/66734178" alt="HTML">
+        </map>
+        <img src="./Закат.jpg" usemap="#map" alt="Тут будет закат" style="width: 500px;">
+      </li>
+      <li><a href=""> Ссылка с пустным href</a></li>
+      <li><a>Ссылка без href</a></li>
+      <li><a href="https://www.youtube.com/" rel="nofollow"> Ссылка, по которой запрещен переход поисковикам</a></li>
+      <li><a href="./about/low.html"> Страница, не доступная для индексации </a></li>
+      <li>
+          <ol>
+              <li><a href="" title="Элемент 1"> Первое </a></li>
+              <li><a href="" title="Элемент 2"> Второе </a></li>
+          </ol>
+      </li>
+      <li><a href="ftp://user:password@example.com/myfile.zip"> Ссылка на файл на сервере FTP</a></li>
+    </ul>
+
+    <h1>Расскажите о себе</h1>
+  <form id="form">
+    <label>
+      Фамилия Имя Отчество
+      <input type="text" name="name" id="name" placeholder="Введите полное имя">
+    </label>
+    <br>
+
+    <label>
+      Мобильный телефон
+      <input type="tel" name="number" id="number" placeholder="Введите номер телефона">
+    </label>
+    <br>
+
+    <label>
+      Электронная почта
+      <input type="email" name="email" id="email" placeholder="Введите вашу почту">
+    </label>
+    <br>
+
+    <label>
+      Дата рождения
+      <input type="date" name="date" id="date">
+    </label>
+    <br>
+
+    <span>Пол</span>
+    <br>
+
+    <label>
+      <input type="radio" name="m" value="male">
+      Мужской
+    </label>
+    <br>
+
+    <label>
+      <input type="radio" name="g" value="female">
+      Женский
+    </label>
+    <br>
+
+    <label>
+      Ваш любимый язык программирования
+      <select id="favLang" name="fav_prog_lang">
+        <option value="pascal">Pascal</option>
+        <option value="c">C</option>
+        <option value="cpp">C++</option>
+        <option value="javascript">JavaScript</option>
+        <option value="php">PHP</option>
+        <option value="python">Python</option>
+        <option value="java">Java</option>
+        <option value="haskell">Haskell</option>
+        <option value="clojure">Clojure</option>
+        <option value="prolog">Prolog</option>
+        <option value="scala">Scala</option>
+      </select>
+    </label>
+    <br>
+
+    <label>
+      Биография
+      <textarea name="b" id="b" placeholder="Расскажите пару слов о себе"></textarea>
+    </label>
+    <br>
+
+    <label>
+      <input type="checkbox" name="sogl" id="sogl">
+      С контрактом ознакомлен
+    </label>
+    <br>
+
+    <button type="submit">Сохранить</button>
+  </form>
+
+
+</body>
+</html>
